@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glaucineia Caminha | Currículo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <header class="topbar no-print" id="nav">
+    <a href="#inicio" class="topbar-brand">Glaucineia Caminha</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="topbar-nav" id="navLinks" aria-label="Seções do currículo">
+      <a href="#experiencias" class="topbar-link">Experiência</a>
+      <a href="#formacao" class="topbar-link">Formação</a>
+      <a href="#competencias" class="topbar-link">Competências</a>
+      <a href="#idiomas" class="topbar-link">Idiomas</a>
+    </nav>
+    <div class="topbar-actions">
+      <button type="button" class="icon-btn" onclick="window.print()" aria-label="Imprimir currículo">
+        <span class="material-symbols-outlined" aria-hidden="true">print</span>
+      </button>
+      <a href="mailto:gneia@hotmail.com" class="btn btn-secondary">Contato</a>
+    </div>
+  </header>
+
+  <main class="cv-layout" id="inicio">
+    <aside class="cv-sidebar">
+      <div class="sidebar-panel">
+        <div class="profile-block">
+          <div class="profile-photo">
+            <img src="Foto_Glaucineia.jpeg" alt="Retrato profissional de Glaucineia Caminha" />
+          </div>
+          <div class="profile-identity">
+            <h2 class="headline-md">Glaucineia Caminha</h2>
+            <p class="profile-role">Contabilidade fiscal · Zona Franca de Manaus</p>
+          </div>
+        </div>
+
+        <section class="sidebar-section" aria-labelledby="contato-heading">
+          <h3 id="contato-heading" class="label-caps section-label">Contato</h3>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:gneia@hotmail.com">
+                <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                <span>gneia@hotmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+5592988054015">
+                <span class="material-symbols-outlined" aria-hidden="true">call</span>
+                <span>92 98805-4015</span>
+              </a>
+            </li>
+            <li>
+              <span class="contact-static">
+                <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                <span>Manaus, AM — Brasil</span>
+              </span>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/glaucineia-caminha-08a15871" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" aria-hidden="true">language</span>
+                <span>linkedin.com/in/glaucineia-caminha</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sidebar-section" id="competencias" aria-labelledby="skills-heading">
+          <h3 id="skills-heading" class="label-caps section-label">Habilidades principais</h3>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <p class="label-caps skill-group-label">Técnicas</p>
+              <ul class="skill-list">
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>Contabilidade fiscal</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>SPED Fiscal</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>EFD-REINF</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>ICMS / PIS / COFINS</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>Suframa</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>Obrigações acessórias</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>Legislação tributária</span>
+                </li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <p class="label-caps skill-group-label">Gestão</p>
+              <ul class="skill-list">
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                  <span>Gestão de equipe</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="sidebar-section" id="idiomas" aria-labelledby="idiomas-heading">
+          <h3 id="idiomas-heading" class="label-caps section-label">Idiomas</h3>
+          <div class="lang-list">
+            <article class="lang-item" data-level="100">
+              <div class="lang-meta">
+                <span class="body-md">Português</span>
+                <span class="label-caps lang-level">Nativo</span>
+              </div>
+              <div class="lang-bar" role="presentation"><span class="lang-fill"></span></div>
+            </article>
+            <article class="lang-item" data-level="60">
+              <div class="lang-meta">
+                <span class="body-md">Inglês</span>
+                <span class="label-caps lang-level">Intermediário</span>
+              </div>
+              <div class="lang-bar" role="presentation"><span class="lang-fill"></span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="sidebar-section" aria-labelledby="creds-heading">
+          <h3 id="creds-heading" class="label-caps section-label">Credenciais</h3>
+          <ul class="cred-list">
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+              <span>CRC Ativo — Conselho Regional de Contabilidade</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+              <span>Especialista em indústrias da Zona Franca de Manaus</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+              <span>MBA em Gestão Tributária (em andamento)</span>
+            </li>
+          </ul>
+        </section>
+
+        <a href="mailto:gneia@hotmail.com" class="btn btn-primary btn-block">
+          <span class="material-symbols-outlined" aria-hidden="true">contact_page</span>
+          Entrar em contato
+        </a>
+      </div>
+    </aside>
+
+    <div class="cv-main">
+      <section class="identity-block">
+        <h1 class="display-lg">Glaucineia Caminha</h1>
+        <div class="identity-rule">
+          <span class="rule-line" aria-hidden="true"></span>
+          <p class="headline-sm identity-subtitle">Especialista fiscal | Contabilidade tributária &amp; conformidade</p>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="resumo-heading">
+        <h2 id="resumo-heading" class="label-caps section-heading">
+          <span class="material-symbols-outlined" aria-hidden="true">description</span>
+          Resumo executivo
+        </h2>
+        <p class="body-lg summary-text">
+          Profissional da área administrativa com experiência em coordenação, planejamento e controle das atividades do setor tributário, envolvendo a escrituração, apuração dos tributos e contribuições. Conhecimento na apuração, geração e validação das declarações, tais como DAM, GIA, DCR-e, DCTF, DCTF-Web; bem como na geração, validação e transmissão dos arquivos SPED Fiscal, SPED Contribuições e EFD-REINF. Especialista em apuração de impostos em processo fiscal de empresas de indústrias de bens intermediários, finais e de informática localizadas na Zona Franca de Manaus. Conhecimento na Política Estadual de Incentivos Fiscais e Extra-fiscais (Lei nº 2.826/2003), RICMS-AM (Decreto nº 20.686/1999) e Resolução Suframa nº 202/2006.
+        </p>
+      </section>
+
+      <section class="impact-card" aria-label="Destaque profissional">
+        <div class="impact-copy">
+          <p class="label-caps impact-label">Destaque profissional</p>
+          <p class="headline-md impact-title">Mais de duas décadas em fiscal tributário, com liderança de equipes e conformidade na Zona Franca de Manaus.</p>
+        </div>
+        <div class="impact-metric">
+          <span class="impact-value">20+</span>
+          <span class="label-caps impact-caption">Anos de experiência</span>
+        </div>
+        <span class="material-symbols-outlined impact-watermark" aria-hidden="true">trending_up</span>
+      </section>
+
+      <section class="content-section" id="experiencias" aria-labelledby="exp-heading">
+        <h2 id="exp-heading" class="label-caps section-heading">
+          <span class="material-symbols-outlined" aria-hidden="true">work_history</span>
+          Experiência profissional
+        </h2>
+
+        <div class="experience-stack">
+          <article class="experience-card experience-card--featured">
+            <div class="experience-header">
+              <div>
+                <h3 class="headline-sm">Supervisora Fiscal</h3>
+                <p class="body-md experience-meta">CAL-COMP Indústria e Comércio de Eletrônicos e Informática LTDA · Manaus, AM</p>
+                <p class="label-caps experience-dates">Jan 2016 — Dez 2021</p>
+              </div>
+              <span class="status-badge">Recente</span>
+            </div>
+            <ul class="duty-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Supervisão da equipe fiscal.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Monitoramento diário do DT-e e do Portal e-CAC.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Atendimento às fiscalizações governamentais, acompanhamento dos fiscais e fornecimento da documentação solicitada.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Elaboração de relatórios mensais para subsidiar a tomada de decisão e o planejamento tático e estratégico.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Gerenciamento de riscos e manutenção da conformidade regulatória junto aos órgãos de licenciamento locais e federal.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Supervisão e orientação de novos colaboradores quanto às responsabilidades e políticas da empresa.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Coordenação de cronogramas de projetos e definição de prazos para conclusão das etapas.</li>
+            </ul>
+            <ul class="chip-list chip-list--inline">
+              <li class="chip">SPED Fiscal</li>
+              <li class="chip">EFD-REINF</li>
+              <li class="chip">Liderança</li>
+              <li class="chip">Suframa</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="headline-sm">Analista Fiscal Sênior</h3>
+                <p class="body-md experience-meta">Philco Eletrônicos SA · Manaus, AM</p>
+                <p class="label-caps experience-dates">Jun 2013 — Ago 2015</p>
+              </div>
+            </div>
+            <ul class="duty-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Cálculo de apuração do ICMS e entrega das obrigações acessórias (DAM, GIA-ICMS).</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Apuração do PIS, COFINS e IPI.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Análise da apuração do ICMS-ST e GIA-ST.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Parametrização das naturezas de operação.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Acompanhamento das modificações nas legislações federal, estadual e municipal.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Lançamentos fiscais, contábeis e conciliação dos impostos.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Conciliação bancária, contas patrimoniais e controle de ativo fixo.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Análise dos livros fiscais e indicadores Suframa.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Elaboração e acompanhamento dos processos de Saída Temporária (DST).</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Previsão financeira de impostos e contribuições e controle de importação.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Assessoria tributária às áreas afins e acompanhamento de processos na SEFAZ.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Conhecimento em DCR-e e DCI.</li>
+            </ul>
+            <ul class="chip-list chip-list--inline">
+              <li class="chip">ICMS</li>
+              <li class="chip">PIS/COFINS</li>
+              <li class="chip">IPI</li>
+              <li class="chip">Importação</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="headline-sm">Especialista Fiscal</h3>
+                <p class="body-md experience-meta">Microservice Tec. Digital da Amazônia LTDA · Manaus, AM</p>
+                <p class="label-caps experience-dates">Out 2002 — Jun 2013</p>
+              </div>
+            </div>
+            <ul class="duty-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> CEIPIM.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Cálculo de apuração do ICMS e entrega das obrigações acessórias (DAM, GIA-ICMS).</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Análise da apuração do PIS, COFINS e IPI.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Análise da apuração do ICMS-ST e GIA-ST.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Acompanhamento das modificações nas legislações federal, estadual e municipal.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Conciliação dos impostos, conciliação bancária e contas patrimoniais.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Análise dos livros fiscais e indicadores Suframa.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Assessoria tributária às áreas afins e acompanhamento de processos na SEFAZ.</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span> Conhecimento em DCR-e e DCI.</li>
+            </ul>
+            <ul class="chip-list chip-list--inline">
+              <li class="chip">DCR-e</li>
+              <li class="chip">DCI</li>
+              <li class="chip">SEFAZ</li>
+              <li class="chip">CEIPIM</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="formacao" aria-labelledby="edu-heading">
+        <h2 id="edu-heading" class="label-caps section-heading">
+          <span class="material-symbols-outlined" aria-hidden="true">school</span>
+          Formação acadêmica
+        </h2>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3 class="body-lg edu-title">MBA em Gestão Tributária</h3>
+            <p class="body-md">Instituto Moraes (Antiga ESP) · Manaus</p>
+            <p class="label-caps edu-date">Em andamento</p>
+          </article>
+          <article class="edu-card">
+            <h3 class="body-lg edu-title">MBA Executivo em Finanças Corporativas</h3>
+            <p class="body-md">Instituto de Dados do Amazonas IDAAM/Gama Filho · Manaus</p>
+            <p class="label-caps edu-date">Concluído em Dez/2007</p>
+          </article>
+          <article class="edu-card">
+            <h3 class="body-lg edu-title">Bacharel em Ciências Contábeis</h3>
+            <p class="body-md">Escola Superior Batista do Amazonas – ESBAM · Manaus</p>
+            <p class="label-caps edu-date">Concluído em Dez/2004</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="cert-heading">
+        <h2 id="cert-heading" class="label-caps section-heading">
+          <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
+          Certificações
+        </h2>
+        <div class="cert-groups">
+          <article class="cert-group">
+            <h3 class="label-caps cert-group-title">Tributário e obrigações fiscais</h3>
+            <ul class="cert-list">
+              <li>
+                <span class="cert-name">PIS e COFINS</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">DCTF e DCTF-Web</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">ICMS Completo</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">ICMS – Alíquota 4%</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">Política de Incentivos Fiscais</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">Tributação na Fonte</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">NF-e</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">SPED Fiscal</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">Bloco K e H SPED Fiscal</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">SPED Contribuições</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">EFD-REINF</span>
+                <span class="cert-issuer">Editor Fiscal</span>
+              </li>
+              <li>
+                <span class="cert-name">DCR-e e DCI</span>
+                <span class="cert-issuer">Softway</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="cert-group">
+            <h3 class="label-caps cert-group-title">Governança e compliance</h3>
+            <ul class="cert-list">
+              <li>
+                <span class="cert-name">RBA – Ética</span>
+                <span class="cert-issuer">RBA</span>
+              </li>
+              <li>
+                <span class="cert-name">RBA – Meio Ambiente</span>
+                <span class="cert-issuer">RBA</span>
+              </li>
+              <li>
+                <span class="cert-name">RBA – Saúde e Segurança</span>
+                <span class="cert-issuer">RBA</span>
+              </li>
+              <li>
+                <span class="cert-name">RBA – Sistemas de Gestão</span>
+                <span class="cert-issuer">RBA</span>
+              </li>
+              <li>
+                <span class="cert-name">RBA – Trabalho</span>
+                <span class="cert-issuer">RBA</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="cert-group">
+            <h3 class="label-caps cert-group-title">Gestão e desenvolvimento</h3>
+            <ul class="cert-list">
+              <li>
+                <span class="cert-name">Gerenciamento de Projetos</span>
+                <span class="cert-issuer">AXM</span>
+              </li>
+              <li>
+                <span class="cert-name">Lei de Informática 8.387/91</span>
+                <span class="cert-issuer">AXM</span>
+              </li>
+              <li>
+                <span class="cert-name">Programa de Gestores</span>
+                <span class="cert-issuer">Alpha</span>
+              </li>
+              <li>
+                <span class="cert-name">Excel Avançado</span>
+                <span class="cert-issuer">DigitalTrainer</span>
+              </li>
+              <li>
+                <span class="cert-name">Relações Interpessoais</span>
+                <span class="cert-issuer">SEBRAE</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer no-print">
+    <div class="footer-inner">
+      <p class="label-caps footer-brand">Glaucineia Caminha | Especialista fiscal</p>
+      <div class="footer-links">
+        <a href="mailto:gneia@hotmail.com">E-mail</a>
+        <a href="tel:+5592988054015">Telefone</a>
+        <a href="https://www.linkedin.com/in/glaucineia-caminha-08a15871" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p class="label-caps footer-copy">© <span id="year"></span> Glaucineia Caminha · CRC Ativo · Manaus, AM</p>
+    </div>
+  </footer>
+
+  <button type="button" class="scroll-top no-print" id="scrollTop" aria-label="Voltar ao topo">
+    <span class="material-symbols-outlined" aria-hidden="true">expand_less</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
