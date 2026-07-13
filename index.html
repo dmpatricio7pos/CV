@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glaucineia Caminha | Currículo</title>
+  <title>Glaucineia Marques | Especialista Fiscal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,11 +18,12 @@
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <nav class="topbar-nav" id="navLinks" aria-label="Seções do currículo">
+    <nav class="topbar-nav" id="navLinks" aria-label="Navegação principal">
+      <a href="#sobre" class="topbar-link">Sobre</a>
       <a href="#experiencias" class="topbar-link">Experiência</a>
-      <a href="#formacao" class="topbar-link">Formação</a>
       <a href="#competencias" class="topbar-link">Competências</a>
-      <a href="#idiomas" class="topbar-link">Idiomas</a>
+      <a href="#formacao" class="topbar-link">Formação</a>
+      <a href="#contato" class="topbar-link">Contato</a>
     </nav>
     <div class="topbar-actions">
       <button type="button" class="icon-btn" onclick="window.print()" aria-label="Imprimir currículo">
@@ -32,178 +33,67 @@
     </div>
   </header>
 
-  <main class="cv-layout" id="inicio">
-    <aside class="cv-sidebar">
-      <div class="sidebar-panel">
-        <div class="profile-block">
-          <div class="profile-photo">
-            <img src="Foto_Glaucineia.jpeg" alt="Retrato profissional de Glaucineia Caminha" />
-          </div>
-          <div class="profile-identity">
-            <h2 class="headline-md">Glaucineia Marques</h2>
-            <p class="profile-role">Contabilidade fiscal · Zona Franca de Manaus</p>
-          </div>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="hero-brand">Glaucineia Marques</p>
+        <h1 class="hero-title">Especialista fiscal com precisão e visão estratégica</h1>
+        <p class="hero-lead">Contabilidade tributária e conformidade para indústrias da Zona Franca de Manaus.</p>
+        <div class="hero-actions">
+          <a href="#experiencias" class="btn btn-secondary">Ver trajetória</a>
+          <a href="mailto:gneia@hotmail.com" class="btn btn-outline">Entrar em contato</a>
         </div>
-
-        <section class="sidebar-section" aria-labelledby="contato-heading">
-          <h3 id="contato-heading" class="label-caps section-label">Contato</h3>
-          <ul class="contact-list">
-            <li>
-              <a href="mailto:gneia@hotmail.com">
-                <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-                <span>gneia@hotmail.com</span>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+5592988054015">
-                <span class="material-symbols-outlined" aria-hidden="true">call</span>
-                <span>92 98805-4015</span>
-              </a>
-            </li>
-            <li>
-              <span class="contact-static">
-                <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
-                <span>Manaus, AM — Brasil</span>
-              </span>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/glaucineia-caminha-08a15871" target="_blank" rel="noopener noreferrer">
-                <span class="material-symbols-outlined" aria-hidden="true">language</span>
-                <span>linkedin.com/in/glaucineia-caminha</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="sidebar-section" id="competencias" aria-labelledby="skills-heading">
-          <h3 id="skills-heading" class="label-caps section-label">Habilidades principais</h3>
-          <div class="skill-groups">
-            <div class="skill-group">
-              <p class="label-caps skill-group-label">Técnicas</p>
-              <ul class="skill-list">
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>Contabilidade fiscal</span>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>SPED Fiscal</span>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>EFD-REINF</span>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>ICMS / PIS / COFINS</span>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>Suframa</span>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>Obrigações acessórias</span>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>Legislação tributária</span>
-                </li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <p class="label-caps skill-group-label">Gestão</p>
-              <ul class="skill-list">
-                <li>
-                  <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                  <span>Gestão de equipe</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="sidebar-section" id="idiomas" aria-labelledby="idiomas-heading">
-          <h3 id="idiomas-heading" class="label-caps section-label">Idiomas</h3>
-          <div class="lang-list">
-            <article class="lang-item" data-level="100">
-              <div class="lang-meta">
-                <span class="body-md">Português</span>
-                <span class="label-caps lang-level">Nativo</span>
-              </div>
-              <div class="lang-bar" role="presentation"><span class="lang-fill"></span></div>
-            </article>
-            <article class="lang-item" data-level="60">
-              <div class="lang-meta">
-                <span class="body-md">Inglês</span>
-                <span class="label-caps lang-level">Intermediário</span>
-              </div>
-              <div class="lang-bar" role="presentation"><span class="lang-fill"></span></div>
-            </article>
-          </div>
-        </section>
-
-        <section class="sidebar-section" aria-labelledby="creds-heading">
-          <h3 id="creds-heading" class="label-caps section-label">Credenciais</h3>
-          <ul class="cred-list">
-            <li>
-              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-              <span>CRC Ativo — Conselho Regional de Contabilidade</span>
-            </li>
-            <li>
-              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-              <span>Especialista em indústrias da Zona Franca de Manaus</span>
-            </li>
-            <li>
-              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-              <span>MBA em Gestão Tributária (em andamento)</span>
-            </li>
-          </ul>
-        </section>
-
-        <a href="mailto:gneia@hotmail.com" class="btn btn-primary btn-block">
-          <span class="material-symbols-outlined" aria-hidden="true">contact_page</span>
-          Entrar em contato
-        </a>
       </div>
-    </aside>
+      <div class="hero-visual" aria-hidden="false">
+        <img
+          src="Foto_Glaucineia.jpeg"
+          alt="Retrato profissional de Glaucineia Marques"
+          class="hero-photo"
+        />
+      </div>
+    </section>
 
-    <div class="cv-main">
-      <section class="identity-block">
-        <h1 class="display-lg">Glaucineia Caminha</h1>
-        <div class="identity-rule">
-          <span class="rule-line" aria-hidden="true"></span>
-          <p class="headline-sm identity-subtitle">Especialista fiscal | Contabilidade tributária &amp; conformidade</p>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="resumo-heading">
-        <h2 id="resumo-heading" class="label-caps section-heading">
-          <span class="material-symbols-outlined" aria-hidden="true">description</span>
-          Resumo executivo
-        </h2>
+    <!-- Sobre -->
+    <section class="lp-section" id="sobre">
+      <div class="lp-container">
+        <header class="lp-head">
+          <p class="label-caps section-kicker">Sobre</p>
+          <h2 class="headline-md">Resumo executivo</h2>
+          <p class="body-lg lp-support">Perfil profissional focado em conformidade, apuração e liderança fiscal.</p>
+        </header>
         <p class="body-lg summary-text">
           Profissional da área administrativa com experiência em coordenação, planejamento e controle das atividades do setor tributário, envolvendo a escrituração, apuração dos tributos e contribuições. Conhecimento na apuração, geração e validação das declarações, tais como DAM, GIA, DCR-e, DCTF, DCTF-Web; bem como na geração, validação e transmissão dos arquivos SPED Fiscal, SPED Contribuições e EFD-REINF. Especialista em apuração de impostos em processo fiscal de empresas de indústrias de bens intermediários, finais e de informática localizadas na Zona Franca de Manaus. Conhecimento na Política Estadual de Incentivos Fiscais e Extra-fiscais (Lei nº 2.826/2003), RICMS-AM (Decreto nº 20.686/1999) e Resolução Suframa nº 202/2006.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section class="impact-card" aria-label="Destaque profissional">
-        <div class="impact-copy">
-          <p class="label-caps impact-label">Destaque profissional</p>
-          <p class="headline-md impact-title">Mais de duas décadas em fiscal tributário, com liderança de equipes e conformidade na Zona Franca de Manaus.</p>
+    <!-- Destaques -->
+    <section class="lp-section lp-section--navy" id="destaques" aria-label="Destaques profissionais">
+      <div class="lp-container highlights">
+        <div class="highlight-item">
+          <span class="highlight-value">20+</span>
+          <span class="label-caps highlight-label">Anos de experiência</span>
         </div>
-        <div class="impact-metric">
-          <span class="impact-value">20+</span>
-          <span class="label-caps impact-caption">Anos de experiência</span>
+        <div class="highlight-item">
+          <span class="highlight-value">CRC</span>
+          <span class="label-caps highlight-label">Registro ativo</span>
         </div>
-        <span class="material-symbols-outlined impact-watermark" aria-hidden="true">trending_up</span>
-      </section>
+        <div class="highlight-item">
+          <span class="highlight-value">ZFM</span>
+          <span class="label-caps highlight-label">Zona Franca de Manaus</span>
+        </div>
+      </div>
+    </section>
 
-      <section class="content-section" id="experiencias" aria-labelledby="exp-heading">
-        <h2 id="exp-heading" class="label-caps section-heading">
-          <span class="material-symbols-outlined" aria-hidden="true">work_history</span>
-          Experiência profissional
-        </h2>
+    <!-- Experiência -->
+    <section class="lp-section" id="experiencias">
+      <div class="lp-container">
+        <header class="lp-head">
+          <p class="label-caps section-kicker">Trajetória</p>
+          <h2 class="headline-md">Experiência profissional</h2>
+          <p class="body-lg lp-support">Liderança e operação fiscal em indústrias da Zona Franca de Manaus.</p>
+        </header>
 
         <div class="experience-stack">
           <article class="experience-card experience-card--featured">
@@ -289,13 +179,70 @@
             </ul>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="content-section" id="formacao" aria-labelledby="edu-heading">
-        <h2 id="edu-heading" class="label-caps section-heading">
-          <span class="material-symbols-outlined" aria-hidden="true">school</span>
-          Formação acadêmica
-        </h2>
+    <!-- Competências -->
+    <section class="lp-section lp-section--alt" id="competencias">
+      <div class="lp-container">
+        <header class="lp-head">
+          <p class="label-caps section-kicker">Expertise</p>
+          <h2 class="headline-md">Competências</h2>
+          <p class="body-lg lp-support">Domínio técnico e capacidade de liderança em ambientes fiscais complexos.</p>
+        </header>
+
+        <div class="skills-columns">
+          <div class="skill-group">
+            <p class="label-caps skill-group-label">Técnicas</p>
+            <ul class="skill-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Contabilidade fiscal</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>SPED Fiscal</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>EFD-REINF</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>ICMS / PIS / COFINS</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Suframa</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Obrigações acessórias</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Legislação tributária</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <p class="label-caps skill-group-label">Gestão</p>
+            <ul class="skill-list">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Gestão de equipe</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Planejamento tático e estratégico</span></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span><span>Relacionamento com órgãos fiscalizadores</span></li>
+            </ul>
+            <div class="lang-block" id="idiomas">
+              <p class="label-caps skill-group-label">Idiomas</p>
+              <div class="lang-list">
+                <article class="lang-item" data-level="100">
+                  <div class="lang-meta">
+                    <span class="body-md">Português</span>
+                    <span class="label-caps lang-level">Nativo</span>
+                  </div>
+                  <div class="lang-bar" role="presentation"><span class="lang-fill"></span></div>
+                </article>
+                <article class="lang-item" data-level="60">
+                  <div class="lang-meta">
+                    <span class="body-md">Inglês</span>
+                    <span class="label-caps lang-level">Intermediário</span>
+                  </div>
+                  <div class="lang-bar" role="presentation"><span class="lang-fill"></span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section class="lp-section" id="formacao">
+      <div class="lp-container">
+        <header class="lp-head">
+          <p class="label-caps section-kicker">Acadêmico</p>
+          <h2 class="headline-md">Formação</h2>
+          <p class="body-lg lp-support">Base contábil sólida e especialização contínua em gestão tributária.</p>
+        </header>
         <div class="edu-grid">
           <article class="edu-card">
             <h3 class="body-lg edu-title">MBA em Gestão Tributária</h3>
@@ -313,133 +260,83 @@
             <p class="label-caps edu-date">Concluído em Dez/2004</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="content-section" aria-labelledby="cert-heading">
-        <h2 id="cert-heading" class="label-caps section-heading">
-          <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
-          Certificações
-        </h2>
+    <!-- Certificações -->
+    <section class="lp-section lp-section--alt" id="certificacoes">
+      <div class="lp-container">
+        <header class="lp-head">
+          <p class="label-caps section-kicker">Credenciais</p>
+          <h2 class="headline-md">Certificações</h2>
+          <p class="body-lg lp-support">Capacitação contínua em tributação, compliance e gestão.</p>
+        </header>
         <div class="cert-groups">
           <article class="cert-group">
             <h3 class="label-caps cert-group-title">Tributário e obrigações fiscais</h3>
             <ul class="cert-list">
-              <li>
-                <span class="cert-name">PIS e COFINS</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">DCTF e DCTF-Web</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">ICMS Completo</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">ICMS – Alíquota 4%</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">Política de Incentivos Fiscais</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">Tributação na Fonte</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">NF-e</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">SPED Fiscal</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">Bloco K e H SPED Fiscal</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">SPED Contribuições</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">EFD-REINF</span>
-                <span class="cert-issuer">Editor Fiscal</span>
-              </li>
-              <li>
-                <span class="cert-name">DCR-e e DCI</span>
-                <span class="cert-issuer">Softway</span>
-              </li>
+              <li><span class="cert-name">PIS e COFINS</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">DCTF e DCTF-Web</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">ICMS Completo</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">ICMS – Alíquota 4%</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">Política de Incentivos Fiscais</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">Tributação na Fonte</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">NF-e</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">SPED Fiscal</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">Bloco K e H SPED Fiscal</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">SPED Contribuições</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">EFD-REINF</span><span class="cert-issuer">Editor Fiscal</span></li>
+              <li><span class="cert-name">DCR-e e DCI</span><span class="cert-issuer">Softway</span></li>
             </ul>
           </article>
-
           <article class="cert-group">
             <h3 class="label-caps cert-group-title">Governança e compliance</h3>
             <ul class="cert-list">
-              <li>
-                <span class="cert-name">RBA – Ética</span>
-                <span class="cert-issuer">RBA</span>
-              </li>
-              <li>
-                <span class="cert-name">RBA – Meio Ambiente</span>
-                <span class="cert-issuer">RBA</span>
-              </li>
-              <li>
-                <span class="cert-name">RBA – Saúde e Segurança</span>
-                <span class="cert-issuer">RBA</span>
-              </li>
-              <li>
-                <span class="cert-name">RBA – Sistemas de Gestão</span>
-                <span class="cert-issuer">RBA</span>
-              </li>
-              <li>
-                <span class="cert-name">RBA – Trabalho</span>
-                <span class="cert-issuer">RBA</span>
-              </li>
+              <li><span class="cert-name">RBA – Ética</span><span class="cert-issuer">RBA</span></li>
+              <li><span class="cert-name">RBA – Meio Ambiente</span><span class="cert-issuer">RBA</span></li>
+              <li><span class="cert-name">RBA – Saúde e Segurança</span><span class="cert-issuer">RBA</span></li>
+              <li><span class="cert-name">RBA – Sistemas de Gestão</span><span class="cert-issuer">RBA</span></li>
+              <li><span class="cert-name">RBA – Trabalho</span><span class="cert-issuer">RBA</span></li>
             </ul>
           </article>
-
           <article class="cert-group">
             <h3 class="label-caps cert-group-title">Gestão e desenvolvimento</h3>
             <ul class="cert-list">
-              <li>
-                <span class="cert-name">Gerenciamento de Projetos</span>
-                <span class="cert-issuer">AXM</span>
-              </li>
-              <li>
-                <span class="cert-name">Lei de Informática 8.387/91</span>
-                <span class="cert-issuer">AXM</span>
-              </li>
-              <li>
-                <span class="cert-name">Programa de Gestores</span>
-                <span class="cert-issuer">Alpha</span>
-              </li>
-              <li>
-                <span class="cert-name">Excel Avançado</span>
-                <span class="cert-issuer">DigitalTrainer</span>
-              </li>
-              <li>
-                <span class="cert-name">Relações Interpessoais</span>
-                <span class="cert-issuer">SEBRAE</span>
-              </li>
+              <li><span class="cert-name">Gerenciamento de Projetos</span><span class="cert-issuer">AXM</span></li>
+              <li><span class="cert-name">Lei de Informática 8.387/91</span><span class="cert-issuer">AXM</span></li>
+              <li><span class="cert-name">Programa de Gestores</span><span class="cert-issuer">Alpha</span></li>
+              <li><span class="cert-name">Excel Avançado</span><span class="cert-issuer">DigitalTrainer</span></li>
+              <li><span class="cert-name">Relações Interpessoais</span><span class="cert-issuer">SEBRAE</span></li>
             </ul>
           </article>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Contato CTA -->
+    <section class="lp-section lp-section--cta" id="contato">
+      <div class="lp-container cta-block">
+        <p class="label-caps section-kicker section-kicker--light">Próximo passo</p>
+        <h2 class="headline-md cta-title">Vamos conversar sobre desafios fiscais e conformidade</h2>
+        <p class="body-lg cta-text">Disponível para oportunidades em contabilidade fiscal, supervisão tributária e projetos de compliance.</p>
+        <div class="cta-actions">
+          <a href="mailto:gneia@hotmail.com" class="btn btn-secondary">gneia@hotmail.com</a>
+          <a href="tel:+5592988054015" class="btn btn-outline">92 98805-4015</a>
+          <a href="https://www.linkedin.com/in/glaucineia-caminha-08a15871" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer no-print">
     <div class="footer-inner">
-      <p class="label-caps footer-brand">Glaucineia Caminha | Especialista fiscal</p>
+      <p class="label-caps footer-brand">Glaucineia Marques | Especialista fiscal</p>
       <div class="footer-links">
         <a href="mailto:gneia@hotmail.com">E-mail</a>
         <a href="tel:+5592988054015">Telefone</a>
         <a href="https://www.linkedin.com/in/glaucineia-caminha-08a15871" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
-      <p class="label-caps footer-copy">© <span id="year"></span> Glaucineia Caminha · CRC Ativo · Manaus, AM</p>
+      <p class="label-caps footer-copy">© <span id="year"></span> Glaucineia Marques · CRC Ativo · Manaus, AM</p>
     </div>
   </footer>
 

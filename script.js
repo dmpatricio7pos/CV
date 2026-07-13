@@ -24,7 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const sectionIds = ["inicio", "experiencias", "formacao", "competencias", "idiomas"];
+  const sectionIds = [
+    "inicio",
+    "sobre",
+    "experiencias",
+    "competencias",
+    "formacao",
+    "contato",
+  ];
+
   const linkMap = new Map(
     [...(navLinks?.querySelectorAll("a") || [])].map((a) => [
       a.getAttribute("href")?.slice(1),
@@ -43,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const id of sectionIds) {
       const el = document.getElementById(id);
       if (!el) continue;
-      if (el.getBoundingClientRect().top <= 120) current = id;
+      if (el.getBoundingClientRect().top <= 140) current = id;
     }
 
     linkMap.forEach((a, id) => {
@@ -59,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const reveals = document.querySelectorAll(
-    ".content-section, .impact-card, .identity-block, .sidebar-section"
+    ".lp-head, .summary-text, .experience-card, .skills-columns, .edu-card, .cert-group, .cta-block, .highlight-item"
   );
   reveals.forEach((el) => el.classList.add("reveal"));
 
@@ -71,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.unobserve(entry.target);
       });
     },
-    { threshold: 0.1, rootMargin: "0px 0px -24px 0px" }
+    { threshold: 0.12, rootMargin: "0px 0px -24px 0px" }
   );
 
   reveals.forEach((el) => revealObserver.observe(el));
